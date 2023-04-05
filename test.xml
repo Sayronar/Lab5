@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization>
+    <id>1</id>
+    <name>ORG</name>
+    <coordinates>
+        <x>25.0</x>
+        <y>30.0</y>
+    </coordinates>
+    <creationDate>2023-04-05T14:25:00.123</creationDate>
+    <annualTurnover>9000.0</annualTurnover>
+    <fullName>OOO ORG</fullName>
+    <employeesCount>100</employeesCount>
+    <type>PUBLIC</type>
+    <officialAddress>
+        <street>STREET</street>
+        <town>
+            <x>10.0</x>
+            <y>5.0</y>
+            <z>6.0</z>
+        </town>
+    </officialAddress>
+</organization>
