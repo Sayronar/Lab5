@@ -168,6 +168,7 @@ public class CollectionManager {
     public void saveCollection() {
         fileManager.writeCollection(organizationsCollection);
         lastSaveTime = LocalDateTime.now();
+        System.out.println("Коллекция успешно сохранена");
     }
 
     /**

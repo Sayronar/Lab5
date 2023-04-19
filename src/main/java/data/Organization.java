@@ -14,6 +14,8 @@ public class Organization implements Comparable<Organization> {
     private OrganizationType type; //Поле может быть null
     private Address officialAddress; //Поле не может быть null
 
+    public Organization() {}
+
     public Organization(Long id, String name, Coordinates coordinates, LocalDateTime creationDate, int annualTurnover,
                         String fullName, Long employeesCount, OrganizationType type, Address officialAddress) {
         this.id = id;
@@ -84,13 +86,14 @@ public class Organization implements Comparable<Organization> {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Organization that = (Organization) o;
-        return id == that.id && Float.compare(that.annualTurnover, annualTurnover) == 0 && employeesCount == that.employeesCount && Objects.equals(name, that.name) && Objects.equals(coordinates, that.coordinates) && Objects.equals(creationDate, that.creationDate) && Objects.equals(fullName, that.fullName) && type == that.type && Objects.equals(officialAddress, that.officialAddress);
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj instanceof Organization) {
+            Organization organizationObj = (Organization) obj;
+            return name.equals(organizationObj.getName()) && coordinates.equals(organizationObj.getCoordinates()) && (annualTurnover == organizationObj.getAnnualTurnover()) && (fullName.equals(organizationObj.getFullName())) && (employeesCount.equals(organizationObj.getEmployeesCount())) && (type == organizationObj.getType()) && officialAddress.equals(organizationObj.getOfficialAddress());
+        }
+        return false;
     }
-
 
     @Override
     public int hashCode() {

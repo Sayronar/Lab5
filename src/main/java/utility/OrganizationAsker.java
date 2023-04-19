@@ -196,7 +196,7 @@ public class OrganizationAsker {
         Long employeesCount;
         while (true) {
             try {
-                Console.println("Введите количество сотрудниковY:");
+                Console.println("Введите количество сотрудников Y:");
                 Console.print(Application.PS2);
                 strEmployeesCount = userScanner.nextLine().trim();
                 if (fileMode) Console.println(strEmployeesCount);

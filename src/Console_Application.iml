@@ -8,7 +8,13 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
-    <orderEntry type="library" exported="" name="jaxb-api-2.3.1" level="project" />
-    <orderEntry type="library" exported="" name="jaxb-runtime-4.0.1" level="project" />
+    <orderEntry type="library" name="javax.activation-api-1.2.0" level="project" />
+    <orderEntry type="library" name="jackson-core-2.14.2" level="project" />
+    <orderEntry type="library" name="jackson-dataformat-xml-2.14.2" level="project" />
+    <orderEntry type="library" name="jackson-databind-2.14.2" level="project" />
+    <orderEntry type="library" name="jackson-annotations-2.14.2" level="project" />
+    <orderEntry type="library" name="woodstox-core-asl-4.4.1" level="project" />
+    <orderEntry type="library" name="stax2-api-4.2.1" level="project" />
+    <orderEntry type="library" name="jackson-datatype-jsr310-2.14.2" level="project" />
   </component>
 </module>

@@ -15,7 +15,7 @@ public class Application {
             OrganizationAsker organizationAsker = new OrganizationAsker(userScanner);
             FileManager fileManager = new FileManager(envVariable);
             CollectionManager collectionManager = new CollectionManager(fileManager);
-            //collectionManager.loadCollection();
+            collectionManager.loadCollection();
             CommandManager commandManager = new CommandManager(
                     new HelpCommand(),
                     new InfoCommand(collectionManager),
